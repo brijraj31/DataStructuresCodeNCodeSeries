@@ -1,4 +1,4 @@
-/*
+
 //
 // Created by brij on 26/03/20.
 //
@@ -24,4 +24,3 @@ int main() {
     } else cout << "Prime";
 }
 
-*/
