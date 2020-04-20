@@ -1,4 +1,4 @@
-/*
+
 //
 // Created by brij on 27/03/20.
 //
@@ -23,10 +23,10 @@ void preProcessing() {
         }
     }
 
-    */
+    
 /*for(int i = 1; i < 100; ++i) {
         cout << i << ' ' <<prime[i] << '\n';
-    }*//*
+    }*/
 
 }
 int main() {
@@ -52,4 +52,4 @@ int main() {
 
     if(i > 1) cout << i << " ^ " << 1;
     return 0;
-}*/
+}
