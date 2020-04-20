@@ -2,7 +2,7 @@
 // Created by brij on 28/03/20.
 //
 
-/*
+
 #include <iostream>
 
 
@@ -51,7 +51,7 @@ int powFastRec(int x, int n) {
     return temp;
 }
 
-*/
+
 
 // a^n % m
 
