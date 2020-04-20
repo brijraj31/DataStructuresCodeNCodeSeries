@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/brij/GAURAV/ProgramProject/CPP/ClionIde/NumberTheory/L4BinaryExponentiation/powerSimple.cpp
+iostream
+-
+

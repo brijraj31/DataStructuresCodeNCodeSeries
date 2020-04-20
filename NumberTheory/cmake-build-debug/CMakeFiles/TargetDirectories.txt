@@ -1,0 +1,3 @@
+/media/brij/GAURAV/ProgramProject/CPP/ClionIde/NumberTheory/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/brij/GAURAV/ProgramProject/CPP/ClionIde/NumberTheory/cmake-build-debug/CMakeFiles/NumberTheory.dir
+/media/brij/GAURAV/ProgramProject/CPP/ClionIde/NumberTheory/cmake-build-debug/CMakeFiles/edit_cache.dir

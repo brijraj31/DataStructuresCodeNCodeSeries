@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project(NumberTheory)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(NumberTheory main.cpp L1PrimalityTesting/naiveprimality.cpp L1PrimalityTesting/sqrtAlgo.cpp L2SieveOfEratosthenes/seiveOfEratosthenes.cpp L4BinaryExponentiation/powerMod.cpp L2SieveOfEratosthenes/kthPrime.cpp L3PrimeFactorization/primeFactBrute.cpp L3PrimeFactorization/OptimedFactors.cpp L5PrimeFactorUsingSievelogn/primeFactorSieve.cpp L6MatrixExponentiation/matrixExp.cpp L7NthElementRecurrence/nthFibonacciNumber.cpp L7NthElementRecurrence/generalFibonacci.cpp L2SieveOfEratosthenes/primeLessThanNBrute.cpp L3PrimeFactorization/factors.cpp L7NthElementRecurrence/SEQspoj.cpp L8EuclidModularArithematic/GCDQCodechef.cpp L9_10ModularArithmetic/codeforcesProblem.cpp L11ModularGCD/modularGCDCodechef.cpp L12ModuloMultiplicativeInverse/moduloInverseFermat.cpp L4BinaryExponentiation/powerSimple.cpp)
