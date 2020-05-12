@@ -1,4 +1,0 @@
-/home/brij/JetbrainsIDE/clion-2019.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /media/brij/GAURAV/ProgramProject/CPP/ClionIde/NumberTheory
--- Configuring done
--- Generating done
--- Build files have been written to: /media/brij/GAURAV/ProgramProject/CPP/ClionIde/NumberTheory/cmake-build-debug
