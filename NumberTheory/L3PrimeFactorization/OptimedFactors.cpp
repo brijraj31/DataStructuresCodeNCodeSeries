@@ -1,6 +1,5 @@
 
 
-
 #include <bits/stdc++.h>
 #define REP(i,n) for (int i = 1; i <= n; ++i)
 #define pb push_back
@@ -45,6 +44,5 @@ int main() {
     primeFacor(n);
 
 }
-
 
 
