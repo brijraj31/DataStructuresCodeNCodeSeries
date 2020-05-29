@@ -3,7 +3,7 @@
 using namespace std;
 
 int phi[1000001];
-void initalize(int maxN) {
+void initialize(int maxN) {
     for(int i = 0; i <= maxN; ++i) {
         phi[i] = i;
     }
