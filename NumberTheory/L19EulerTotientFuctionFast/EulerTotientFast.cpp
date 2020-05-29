@@ -21,7 +21,7 @@ void initialize(int maxN) {
 int main() {
 
 
-    initalize(1000001);
+    initialize(1000001);
 
     int t, x;
     cin >> t;
