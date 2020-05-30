@@ -3,8 +3,7 @@
 // Created by brijr on 29-3-20.
 //
 
-*/
-https://www.hackerearth.com/problem/algorithm/connected-components-in-a-graph/*//*
+/* https://www.hackerearth.com/problem/algorithm/connected-components-in-a-graph */
 
 
 
