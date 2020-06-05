@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\linespread{1.5}
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+\title{Euler Totient Function $\phi(n)$}{}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+	\section{Defintion}
+		Euler Totient Function $\phi(n)$ is defined for a natural number $n$ as the count of the natural numbers which are less than n and are co prime to n.
+
+		$\phi(n) =$ \# of numbers co-prime with n.
+
+\begin{lstlisting}
+	int Phi(int N) {
+		int cnt = 0;
+		for(int i = 1; i <= N; ++i)
+			if(GCD(i, N) == 1)
+				cnt++;
+		
+		return cnt;
+	}
+\end{lstlisting}
+
+
+	Time Complexity $\mathcal{O}(n\log{n})$
+
+	$\phi(p) = p-1$ where p is a prime number.
+
+	$\phi(p^{x}) = ?$
+
+	$\phi(p^{x}) = p^{x} - $ Number of integers not co-prime with p
+
+	Observations - All multiples of $p$ can never be co-prime with $p^{x}$
+
+	How many such numbers are there? \\
+			
+	$\frac{p^{x}}{p}$ \\
+	
+	Hint for above : Number of divisors in a range from $1$ to $100$ of $3$ are?
+
+	$\phi(p^x) = p^x - (\dfrac{p^x}{p})$
+
+	$\phi(p^x) = p^{x-1} (p - 1)$
+
+
+	\section {Multiplicative}
+		An arithmetic fucntion $f(x)$ is called multiplicative if 
+
+		$f(N * M) = f(N) * f(M)$ where $\gcd(N,M) = 1$
+
+
+		Let $f(x)$ is multiplicative,
+
+		to evaluate $f(N)$ where 
+
+		$N = p_{1}^{x_1} * p_{2}^{x_2} * \cdots * p_{k}^{x_k}$
+
+		
+		$d(N) = (x_1 + 1) * (x_2 + 1) * \cdots * (x_k + 1)$
+
+		where $d(N)$ denotes number of divisors of a number
+
+
+		$d(N) = d(p_1^{x_1}) * d(p_2^{x_2}) * \cdots * d(p_k^{x_k})$
+
+		$d(p_1^{x_1}) = (x_1 + 1)$
+
+		$\phi(p^x) = p^{x - 1} (p - 1)$
+
+		$\therefore \phi(N) = p_1^{x_1 - 1} \times p_2^{x_2 - 1} \times p_3^{x_3 - 1} \times \cdots \times p_k^{x_k - 1}$
+
+	Above formula is not useful for computation as it involves exponents of prime factors \\
+		
+	rewriting this as \\
+
+	$\phi(N) = p_1^{x_1} \left(1 - \dfrac{1}{p_1}\right) \times p_2^{x_2} \left(1 - \dfrac{1}{p_2}\right) \times p_3^{x_3} \left(1 - \dfrac{1}{p_3}\right) \times \cdots \times p_k^{x_k} \left(1 - \dfrac{1}{p_k}\right)$
+	\\ \\
+	$\phi(N) = p_1^{x1} \times p_2^{x_2} \times p_3^{x_3} \times \cdots \times p_k^{x_k} \times \left(\dfrac{p_1 - 1}{p_1}\right) \times \left(\dfrac{p_2 - 1}{p_2} \right) \times \left(\dfrac{p_3 - 1}{p_3} \right) \times \cdots \times \left(\dfrac{p_k - 1}{p_k} \right)$
+
+	$\phi(N) = N \times \left(\dfrac{p_1 - 1}{p_1}\right) \times \left(\dfrac{p_2 - 1}{p_2} \right) \times \left(\dfrac{p_3 - 1}{p_3} \right) \times \cdots \times \left(\dfrac{p_k - 1}{p_k} \right)$
+
+
+\end{document}
