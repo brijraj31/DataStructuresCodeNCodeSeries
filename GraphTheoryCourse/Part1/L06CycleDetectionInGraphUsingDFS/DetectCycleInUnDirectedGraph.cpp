@@ -21,12 +21,12 @@ bool dfs(vector<int> adj[1001], int V, bool vis[1001], int s, int p) {
     vis[s] = true;
 
     for(int i = 0; i < adj[s].size(); ++i) {
-        if(adj[s][i] == s) return true;
+        if(adj[s][i] == s) return true; // Self loop
         if(!vis[adj[s][i]]) {
             if(dfs(adj, V, vis, adj[s][i], s)) return true;
         }
         else {
-            if(adj[s][i] != p) {
+            if(adj[s][i] != p) { // If a vertex is already visited (the only visited one can be the parent itself)
                 return true;
             }
         }
