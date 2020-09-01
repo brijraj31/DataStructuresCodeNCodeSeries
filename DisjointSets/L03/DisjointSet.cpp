@@ -20,18 +20,16 @@ int findSet(int s) {
 void unionSet(int u, int v) {
     int a = findSet(u);
     int b = findSet(v);
-
     if(a == b) return;
     if(a > b) {
         int temp = a;
         a = b;
         b = temp;
     }
-    
     parent[b] = a;
 }
-void dfs(int s, int p = -1) {
 
+void dfs(int s, int p = -1) {
     vis[s] = true;
     parent[s] = parent[p];
 
@@ -56,20 +54,14 @@ void makeDisjointSet(int n) {
     }
 }
 
-int main() {
 
+int main() {
     int n, m;
     cin >> n >> m;
-
     int u, v;
-
     for(int i = 0; i < m; ++i) {
         cin >> u >> v;
         adj[u].push_back(v);
         adj[v].push_back(u);
     }
-
-    
-
-
 }
