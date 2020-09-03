@@ -62,7 +62,7 @@ void dfs(vector<vector<int>>& adj, int v, vector<bool>& visited, vector<int>& ti
         }
         else
         {
-            dfs(adj, to, visited, tin, low, cutPoints,timer, p);
+            dfs(adj, to, visited, tin, low, cutPoints,timer, v);
             low[v] = min(low[v], low[to]);
             if (low[to] >= tin[v] && p != -1)
                 IS_CUTPOINT(v, cutPoints);
@@ -108,6 +108,7 @@ int main() {
         for (int i = 0; i < m; ++i) {
             cin >> a >> b;
             adj[a].push_back(b);
+            adj[b].push_back(a);
         }
 
         
