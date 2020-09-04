@@ -40,7 +40,13 @@ void dfs(int v, int p = -1) {
         }
     }
 
-    if(p == -1 && children > 1)
+    if(p == -1 && children > 1) 
+    /* This check is useful for the root as root is always having lowest intime so this algorithm might report false positive. Eg for such cases are 
+    1 2
+    1 3
+    2 3
+    Here root is not articulation point
+    */
         IS_CUTPOINT(v);
 }
 
