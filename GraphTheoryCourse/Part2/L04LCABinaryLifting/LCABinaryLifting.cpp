@@ -75,7 +75,6 @@ Node * lca(Node* root,int a,int b) {
             a = LCA[a][i], b = LCA[b][i];
         }
     }
-
     return refer[LCA[a][0]];
 }
 

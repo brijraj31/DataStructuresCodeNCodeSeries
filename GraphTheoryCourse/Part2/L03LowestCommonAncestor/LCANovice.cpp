@@ -54,7 +54,7 @@ int main() {
                 lb --;
             }
         }
-        else if(la > lb) {
+        else if (la > lb) {
             while(lb != la) {
                 a = parent[a];
                 la --;

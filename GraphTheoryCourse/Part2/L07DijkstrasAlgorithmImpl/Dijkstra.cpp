@@ -35,6 +35,7 @@ int main() {
 
         for (pair<int, int> edge : adj[curr]) {
             if (curr_d + edge.second < dist[edge.first]) {
+                dist[edge.first] = curr_d + edge.second;
                 pq.emplace(dist[edge.first] , edge.first);
             }
         }
