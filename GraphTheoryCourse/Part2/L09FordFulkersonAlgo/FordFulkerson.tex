@@ -24,7 +24,7 @@
     ]
     \node[mycircle] (c1) {$s$};
     \node[mycircle,below right=of c1] (c2) {$D$};
-    \node[mycircle,right=of c2] (c3) {$v_4$};
+    \node[mycircle,right=of c2] (c3) {$C$};
     \node[mycircle,above right=of c1] (c4) {$A$};
     \node[mycircle,right=of c4] (c5) {$B$};
     \node[mycircle,below right=of c5] (c6) {$t$};
@@ -61,7 +61,7 @@
     ]
     \node[mycircle] (c1) {$s$};
     \node[mycircle,below right=of c1] (c2) {$D$};
-    \node[mycircle,right=of c2] (c3) {$v_4$};
+    \node[mycircle,right=of c2] (c3) {$C$};
     \node[mycircle,above right=of c1] (c4) {$A$};
     \node[mycircle,right=of c4] (c5) {$B$};
     \node[mycircle,below right=of c5] (c6) {$t$};
@@ -111,7 +111,7 @@
         ]
         \node[mycircle] (c1) {$s$};
         \node[mycircle,below right=of c1] (c2) {$D$};
-        \node[mycircle,right=of c2] (c3) {$v_4$};
+        \node[mycircle,right=of c2] (c3) {$C$};
         \node[mycircle,above right=of c1] (c4) {$A$};
         \node[mycircle,right=of c4] (c5) {$B$};
         \node[mycircle,below right=of c5] (c6) {$t$};
@@ -150,7 +150,7 @@
         ]
         \node[mycircle] (c1) {$s$};
         \node[mycircle,below right=of c1] (c2) {$D$};
-        \node[mycircle,right=of c2] (c3) {$v_4$};
+        \node[mycircle,right=of c2] (c3) {$C$};
         \node[mycircle,above right=of c1] (c4) {$A$};
         \node[mycircle,right=of c4] (c5) {$B$};
         \node[mycircle,below right=of c5] (c6) {$t$};
@@ -189,7 +189,7 @@
         ]
         \node[mycircle] (c1) {$s$};
         \node[mycircle,below right=of c1] (c2) {$D$};
-        \node[mycircle,right=of c2] (c3) {$v_4$};
+        \node[mycircle,right=of c2] (c3) {$C$};
         \node[mycircle,above right=of c1] (c4) {$A$};
         \node[mycircle,right=of c4] (c5) {$B$};
         \node[mycircle,below right=of c5] (c6) {$t$};
@@ -211,4 +211,46 @@
         \end{tikzpicture}
         \caption{Reverse Edge Residual Capacity}
     \end{figure}
+
+    \section{Ford - Fulkerson Method}
+    \begin{enumerate}
+        \item Initialize flow through each edge as 0. \\
+        \begin{tikzpicture}[
+            mycircle/.style={
+            circle,
+            draw=black,
+            fill=gray,
+            fill opacity = 0.3,
+            text opacity=1,
+            inner sep=2pt,
+            minimum size=40pt,
+            font=\large},
+        myarrow/.style={-Stealth},
+        node distance=2cm and 3cm
+        ]
+        \node[mycircle] (c1) {$s$};
+        \node[mycircle,below right=of c1] (c2) {$D$};
+        \node[mycircle,right=of c2] (c3) {$C$};
+        \node[mycircle,above right=of c1] (c4) {$A$};
+        \node[mycircle,right=of c4] (c5) {$B$};
+        \node[mycircle,below right=of c5] (c6) {$t$};
+    
+        \foreach \i/\j/\txt/\p in {% start node/end node/text/position
+            c1/c2/{0/4}/below,
+            c1/c4/{0/7}/above,
+            c2/c3/{0/2}/below,
+            c3/c6/{0/5}/below,
+            c4/c5/{0/5}/above,
+            c5/c6/{0/8}/above,
+            c3/c5/{0/3}/below,
+            c2/c4/{0/3}/below,
+            c4/c3/{0/3}/above}
+            \draw [myarrow] (\i) -- node[sloped,font=\large,\p] {\txt} (\j);
+    
+    
+        % draw this outside loop to get proper orientation of 10
+        \end{tikzpicture}
+        
+        \item find an augmenting path from $s$ to $t$. \\
+    \end{enumerate}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.6.16)  6 SEP 2020 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.6.16)  13 SEP 2020 16:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -353,20 +353,30 @@ Overfull \hbox (49.00905pt too wide) in paragraph at lines 211--212
 [][] 
  []
 
-[3] [4] (d:/ProgramProject/DataStructuresCodeNCodeSeries/GraphTheoryCourse/Part2/L09FordFulkersonAlgo/FordFulkerson.aux) ) 
+
+Overfull \hbox (74.00908pt too wide) in paragraph at lines 217--253
+[] 
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+[5] (d:/ProgramProject/DataStructuresCodeNCodeSeries/GraphTheoryCourse/Part2/L09FordFulkersonAlgo/FordFulkerson.aux) ) 
 Here is how much of TeX's memory you used:
  11977 strings out of 492623
  248065 string characters out of 6133290
- 301865 words of memory out of 5000000
+ 311004 words of memory out of 5000000
  15674 multiletter control sequences out of 15000+600000
  7895 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,67p,527b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on d:/ProgramProject/DataStructuresCodeNCodeSeries/GraphTheoryCourse/Part2/L09FordFulkersonAlgo/FordFulkerson.pdf (4 pages, 94407 bytes).
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on d:/ProgramProject/DataStructuresCodeNCodeSeries/GraphTheoryCourse/Part2/L09FordFulkersonAlgo/FordFulkerson.pdf (5 pages, 97189 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
